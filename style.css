@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    
+}
+.header__tittle, h1 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: TT Lakes;
+    margin: 0;
+    color: #7E7E82;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+}
+.main__block {
+    padding: 1rem;
+}
+
+.navi__block {
+    border: none;
+}
+.navi__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    border: none;
+    list-style: none;
+    padding: 1rem 0;
+
+}
