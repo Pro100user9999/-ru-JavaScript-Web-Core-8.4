@@ -1,31 +1,26 @@
-body {
-    padding: 0;
-    margin: 0;
-    background: transparent;
-    
-}
-.header__tittle, h1 {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: TT Lakes;
-    margin: 0;
-    color: #7E7E82;
-    letter-spacing: 0.8px;
-    line-height: 24px;
-}
-.main__block {
-    padding: 1rem;
+.swiper {
+    width: 100%;
+    margin:0;
+    height: 200px;
 }
 
-.navi__block {
-    border: none;
+.swiper-wrapper {
+    height: 200px;
+    border-radius: 10px;
 }
-.navi__list {
+
+.swiper-slide {
     display: flex;
-    flex-direction: row;
-    margin: 0;
-    border: none;
-    list-style: none;
-    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: goldenrod;
+    color: rgb(5, 5, 5);
+}
 
+.swiper-button-prev,
+.swiper-button-next {
+    color: white;
 }

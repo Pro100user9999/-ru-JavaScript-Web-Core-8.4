@@ -1,82 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>JS задание 8.4</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SimpleJS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="main__block">
-        <header>
-            <div class="header__tittle">
-                <h1>Ремонт техники различных брендов</h1>
-            </div>
-        </header>
-        <nav>
-            <div class="navi__block">
-                <ul class="navi__list">
-                    <li class="navi__item">
-                        <button type="button" class="navi__button">
-                            <img src="./IMG/cat1.png" alt="Lenovo">
-                        </button>
-                    </li>
-                    <li class="navi__item">
-                        <button type="button" class="navi__button">
-                            <img src="./IMG/cat1 copy.png" alt="samsung">
-                        </button>
-                    </li>
-                    <li class="navi__item">
-                        <button type="button" class="navi__button">
-                            <img src="./IMG/cat1 copy 11.png" alt="apple">
-                        </button>
-                    </li>
-                    <li class="navi__item">
-                        <button type="button" class="navi__button">
-                            <img src="./IMG/cat1 copy 3.png" alt="viewsonic">
-                        </button>
-                    </li>
-                    <li class="navi__item">
-                        <button type="button" class="navi__button">
-                            <img src="./IMG/cat1 copy 7.png" alt="bosch">
-                        </button>
-                    </li>
-                    <li class="navi__item">
-                        <button type="button" class="navi__button">
-                            <img src="./IMG/cat1 copy 8.png" alt="hp">
-                        </button>
-                    </li>
-                    <li class="navi__item">
-                        <button type="button" class="navi__button">
-                            <img src="./IMG/cat1 copy 9.png" alt="acer">
-                        </button>
-                    </li>
-                    <li class="navi__item">
-                        <button type="button" class="navi__button">
-                            <img src="./IMG/cat1 copy 10.png" alt="sony">
-                        </button>
-                    </li>
-                    <li class="navi__item">
-                        <button type="button" class="navi__button">
-                            <img src="./IMG/cat1.png" alt="lenova">
-                        </button>
-                    </li>
-                    <li class="navi__item">
-                        <button type="button" class="navi__button">
-                            <img src="./IMG/cat1 copy.png" alt="samsung">
-                        </button>
-                    </li>
-                    <li class="navi__item">
-                        <button type="button" class="navi__button">
-                            <img src="./IMG/cat1 copy 11.png" alt="apple">
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</body>
 
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./IMG/cat1.png" alt="lenovo"></div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
