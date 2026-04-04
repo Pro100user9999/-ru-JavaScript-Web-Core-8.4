@@ -1,11 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+.header__tittle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #7E7E82;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-family: 'TT Lakes';
+    background: #F8F8F8;
+    
+    
+
+}
 .swiper {
     width: 100%;
     margin:0;
-    height: 200px;
+    padding: 0;
+    height: 150px;
 }
 
 .swiper-wrapper {
-    height: 200px;
+    height: 150px;
     border-radius: 10px;
 }
 
@@ -23,5 +45,5 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: #F8F8F8;
+    color: #e6e5e5;
 }
