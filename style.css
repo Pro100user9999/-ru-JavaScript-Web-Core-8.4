@@ -24,6 +24,7 @@ body {
     margin:0;
     padding: 0;
     height: 150px;
+    display: none;
 }
 
 .swiper-wrapper {
@@ -46,4 +47,10 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
     color: #444242;
+}
+
+@media (max-width: 767px) {
+    .swiper {
+        display: block;
+    }
 }

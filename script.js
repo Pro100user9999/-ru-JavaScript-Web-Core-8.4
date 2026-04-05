@@ -20,3 +20,26 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+let mySwiper = null;
+
+function initSwiper() {
+  if (!mySwiper) {
+    mySwiper = new Swiper('#mobileSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  }
+  else if (window.innerWidth > 767 && mySwiper) {
+    mySwiper.destroy(true, true);
+    mySwiper = null;
+  }
+}
+
+initSwiper();
+
+window.addEventListener('resize', initSwiper);
