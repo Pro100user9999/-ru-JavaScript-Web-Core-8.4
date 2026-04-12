@@ -43,11 +43,13 @@ document.querySelector("#mybutton").addEventListener("click", () => {
       .querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 4)")
       .forEach((slide) => {
         slide.classList.add("hidden");
+        document.querySelector("#mybutton").textContent = "Показать все";
       });
     isShown = false;
   } else {
     document.querySelectorAll(".swiper-wrapper .hidden").forEach((slide) => {
       slide.classList.remove("hidden");
+      document.querySelector("#mybutton").textContent = "Скрыть";
     });
     isShown = true;
   }
