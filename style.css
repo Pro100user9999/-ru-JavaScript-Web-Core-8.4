@@ -49,7 +49,6 @@ body {
     color: #444242;
 }
 
-/* Мобильная версия - swipe слайдер */
 @media (max-width: 767px) {
     .swiper {
         display: block;
@@ -65,15 +64,16 @@ body {
     }
 }
 
-/* Планшетная версия - grid 3 колонки × 4 строки */
-@media (min-width: 768px) and (max-width: 1023px) {
+
+@media (min-width: 768px) {
     .swiper {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 100px;
+        grid-auto-flow: row;
         gap: 15px;
         height: auto;
-        padding: 15px;
+        padding: 15px; 
     }
 
     .swiper-wrapper {
@@ -93,7 +93,7 @@ body {
         object-fit: contain;
     }
 
-    /* Скрываем элементы навигации */
+  
     .swiper-pagination,
     .swiper-button-prev,
     .swiper-button-next,
@@ -102,15 +102,16 @@ body {
     }
 }
 
-/* Десктопная версия - grid 4 колонки × 3 строки */
+
 @media (min-width: 1024px) {
     .swiper {
         display: grid !important;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 140px;
+        grid-auto-flow: row; 
         gap: 20px;
         height: auto;
-        padding: 20px;
+        padding: 20px; 
     }
 
     .swiper-wrapper {
@@ -130,7 +131,6 @@ body {
         object-fit: contain;
     }
 
-    /* Скрываем элементы навигации */
     .swiper-pagination,
     .swiper-button-prev,
     .swiper-button-next,
