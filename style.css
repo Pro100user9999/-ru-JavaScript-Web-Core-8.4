@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'TT Lakes', sans-serif;
+
     
 }
 .header__tittle {
@@ -49,6 +51,8 @@ body {
     color: #444242;
 }
 
+
+
 @media (max-width: 767px) {
     .swiper {
         display: block;
@@ -62,6 +66,7 @@ body {
     .swiper-slide {
         height: 150px;
     }
+    
 }
 
 
@@ -100,6 +105,12 @@ body {
     .swiper-scrollbar {
         display: none !important;
     }
+    .button__hidden, img {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    }
 }
 
 
@@ -136,5 +147,14 @@ body {
     .swiper-button-next,
     .swiper-scrollbar {
         display: none !important;
+    }
+    .button__hidden, img {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    }
+    .button__hidden {
+        padding: 8px;
     }
 }
