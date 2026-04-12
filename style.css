@@ -111,8 +111,10 @@ body {
     border: none;
     }
     .button__container {
-        padding: auto;
-        border: none;
+    border: none;
+    }
+    .hidden {
+        display: none;
     }
 }
 
@@ -157,7 +159,6 @@ body {
     border: none;
     }
     .button__container {
-        padding: auto;
         border: none;
     }
 }

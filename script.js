@@ -4,21 +4,21 @@ function initSwiper() {
   // Инициализируем Swiper только на мобильных (< 768px)
   if (window.innerWidth < 768) {
     if (!mySwiper) {
-      mySwiper = new Swiper('.swiper', {
-        direction: 'horizontal',
+      mySwiper = new Swiper(".swiper", {
+        direction: "horizontal",
         loop: true,
         slidesPerView: 1,
         spaceBetween: 10,
         pagination: {
-          el: '.swiper-pagination',
+          el: ".swiper-pagination",
           clickable: true,
         },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         scrollbar: {
-          el: '.swiper-scrollbar',
+          el: ".swiper-scrollbar",
         },
       });
     }
@@ -34,4 +34,21 @@ function initSwiper() {
 initSwiper();
 
 // Пересоздание при изменении размера окна
-window.addEventListener('resize', initSwiper);
+window.addEventListener("resize", initSwiper);
+
+let isShown = false;
+document.querySelector("#mybutton").addEventListener("click", () => {
+  if (isShown) {
+    document
+      .querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 4)")
+      .forEach((slide) => {
+        slide.classList.add("hidden");
+      });
+    isShown = false;
+  } else {
+    document.querySelectorAll(".swiper-wrapper .hidden").forEach((slide) => {
+      slide.classList.remove("hidden");
+    });
+    isShown = true;
+  }
+});
