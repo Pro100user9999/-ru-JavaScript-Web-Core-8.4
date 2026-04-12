@@ -51,6 +51,10 @@ body {
     color: #444242;
 }
 
+.button__container {
+    display: none;
+}
+
 
 
 @media (max-width: 767px) {
@@ -112,6 +116,8 @@ body {
     }
     .button__container {
     border: none;
+    display: flex;
+    padding: 0 15px;
     }
     .hidden {
         display: none;
@@ -160,5 +166,7 @@ body {
     }
     .button__container {
         border: none;
+        display: flex;
+        padding: 0 20px;
     }
 }
