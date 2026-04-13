@@ -49,7 +49,6 @@ document.querySelector("#mybutton").addEventListener("click", () => {
   } else {
     document.querySelectorAll(".swiper-wrapper .hidden").forEach((slide) => {
       slide.classList.remove("hidden");
-      document.querySelector("#mybutton").innerHTML = "<img id='arrowIcon' src='./IMG/expand_up.png' alt='скрыть'>Скрыть"; 
     });
     document.querySelector("#mybutton").innerHTML = "<img id='arrowIcon' src='./IMG/expand_up.png' alt='скрыть'>Скрыть"; 
     isShown = true;
