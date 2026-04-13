@@ -2,12 +2,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'TT Lakes', sans-serif;
+    background: #F8F8F8;
 
     
 }
 .header__tittle {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     color: #7E7E82;
     font-size: 16px;
