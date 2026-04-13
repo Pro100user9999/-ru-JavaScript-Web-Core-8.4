@@ -43,13 +43,13 @@ document.querySelector("#mybutton").addEventListener("click", () => {
       .querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 4)")
       .forEach((slide) => {
         slide.classList.add("hidden");
-        document.querySelector("#mybutton").textContent = "Показать все";
+        document.querySelector("#mybutton").innerHTML = "<img id='arrowIcon' src='./IMG/expand_down.png' alt='раскрыть'>Показать все"; // Изменяем текст кнопки
       });
     isShown = false;
   } else {
     document.querySelectorAll(".swiper-wrapper .hidden").forEach((slide) => {
       slide.classList.remove("hidden");
-      document.querySelector("#mybutton").textContent = "Скрыть";
+      document.querySelector("#mybutton").innerHTML = "<img id='arrowIcon' src='./IMG/expand_up.png' alt='скрыть'>Скрыть"; // Изменяем текст кнопки
     });
     isShown = true;
   }
