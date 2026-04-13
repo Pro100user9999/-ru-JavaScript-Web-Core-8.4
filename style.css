@@ -107,12 +107,13 @@ body {
     .swiper-scrollbar {
         display: none !important;
     }
-    .button__hidden, img {
+    .button__hidden, #arrowIcon {
     display: flex;
     justify-content: start;
     align-items: center;
     margin: 0;
     border: none;
+    vertical-align: middle;
     }
     .button__container {
     border: none;
@@ -157,12 +158,13 @@ body {
     .swiper-scrollbar {
         display: none !important;
     }
-    .button__hidden, img {
+    .button__hidden, #arrowIcon {
     display: flex;
     justify-content: start;
     align-items: center;
     margin: 0;
     border: none;
+    vertical-align: middle;
     }
     .button__container {
         border: none;
