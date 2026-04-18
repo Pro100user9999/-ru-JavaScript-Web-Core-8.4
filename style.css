@@ -132,6 +132,7 @@ body {
     .hidden {
         display: none;
     }
+    
 }
 
 
@@ -180,9 +181,8 @@ body {
         vertical-align: middle;
     }
 
-    .button__container {
-        border: none;
-        display: flex;
-        padding: 0 15px;
+    .hidden {
+        display: none;
     }
-}
+
+}   

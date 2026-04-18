@@ -38,12 +38,29 @@ window.addEventListener("resize", initSwiper);
 
 let isShown = false;
 document.querySelector("#mybutton").addEventListener("click", () => {
+  const width = window.innerWidth;
+
   if (isShown) {
-    document
-      .querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 4)")
-      .forEach((slide) => {
-        slide.classList.add("hidden");
-      });
+    document.querySelectorAll(".swiper-wrapper .hidden").forEach((slide) => {
+      slide.classList.remove("hidden");
+    });
+
+    if (width >= 1024) {
+      document
+        .querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 3)")
+        .forEach((slide) => {
+          slide.classList.add("hidden");
+        });
+    } else if (width >= 768) {
+      document
+        .querySelectorAll(
+          ".swiper-wrapper .swiper-slide:nth-last-child(-n + 5)",
+        )
+        .forEach((slide) => {
+          slide.classList.add("hidden");
+        });
+    }
+
     document.querySelector("#mybutton").innerHTML =
       "<img id='arrowIcon' src='./IMG/expand_down.png' alt='раскрыть'>Показать все";
     isShown = false;
