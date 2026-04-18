@@ -121,6 +121,7 @@ body {
         margin: 0;
         border: none;
         vertical-align: middle;
+        background: none;
     }
 
     .button__container {
@@ -179,6 +180,7 @@ body {
         margin: 0;
         border: none;
         vertical-align: middle;
+        background: none;
     }
     
     .hidden {
