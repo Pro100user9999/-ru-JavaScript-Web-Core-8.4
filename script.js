@@ -42,14 +42,14 @@ document.querySelector("#mybutton").addEventListener("click", () => {
 
   if (isShown) {
     document.querySelectorAll(".swiper-wrapper .hidden").forEach((slide) => {
-      slide.classList.remove("hidden");
+      slide.classList.remove("hidden", "slide--hidden");
     });
 
     if (width >= 1024) {
       document
         .querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 3)")
         .forEach((slide) => {
-          slide.classList.add("hidden");
+          slide.classList.add("hidden", "slide--hidden");
         });
     } else if (width >= 768) {
       document
@@ -57,7 +57,7 @@ document.querySelector("#mybutton").addEventListener("click", () => {
           ".swiper-wrapper .swiper-slide:nth-last-child(-n + 5)",
         )
         .forEach((slide) => {
-          slide.classList.add("hidden");
+          slide.classList.add("hidden", "slide--hidden");
         });
     }
 
@@ -66,7 +66,7 @@ document.querySelector("#mybutton").addEventListener("click", () => {
     isShown = false;
   } else {
     document.querySelectorAll(".swiper-wrapper .hidden").forEach((slide) => {
-      slide.classList.remove("hidden");
+      slide.classList.remove("hidden", "slide--hidden");
     });
     document.querySelector("#mybutton").innerHTML =
       "<img id='arrowIcon' src='./IMG/expand_up.png' alt='скрыть'>Скрыть";
