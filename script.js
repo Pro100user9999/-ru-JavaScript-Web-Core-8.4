@@ -57,7 +57,7 @@ document.querySelector("#mybutton").addEventListener("click", () => {
           ".swiper-wrapper .swiper-slide:nth-last-child(-n + 5)",
         )
         .forEach((slide) => {
-          slide.classList.add("hidden", "slide--hidden");
+          slide.classList.add("hidden");
         });
     }
 

@@ -180,10 +180,11 @@ body {
         border: none;
         vertical-align: middle;
     }
-
+    
     .hidden {
         display: flex;
     }
+
     .slide--hidden {
         display: none;
     }
