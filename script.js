@@ -65,14 +65,12 @@ document.querySelector("#mybutton").addEventListener("click", () => {
     });
 
     if (width >= 1024) {
-      console.log(1024)
       document
         .querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 3)")
         .forEach((slide) => {
           slide.classList.add("hidden", "slide--hidden");
         });
     } else if (width >= 768) {
-      console.log(768)
       document
         .querySelectorAll(
           ".swiper-wrapper .swiper-slide:nth-last-child(-n + 5)",
